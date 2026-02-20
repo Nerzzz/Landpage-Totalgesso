@@ -55,6 +55,13 @@
                 ]
             }
         </script>
+
+        <script>
+            function sendMessage(context){
+                const message = `Olá, gostaria se mais informações sobre *${context}*`;
+                window.open(`https://wa.me/5519999078738?text=${message}`, "_blank");
+            }
+        </script>
         
         <link rel="stylesheet" href="./src/styles/root.css">
         <link rel="stylesheet" href="./src/styles/index.css">
@@ -124,6 +131,7 @@
                 </div>
             </div>
         </section>
+
         <section id="localizacao">
             <div class="localizacao_content">
                 <h2>Localização</h2>
@@ -151,12 +159,58 @@
                 </div>
             </div>
         </section>
+
+        <section id="materiais">
+            <h2>Materiais</h2>
+            <div class="materiais_content">
+                <div class="hook">
+                    <h3>Não achou o que queria?</h3>
+                    <p>Entre em contato conosco</p>
+                    <a href="https://wa.me/5519999078738" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+                <div class="cards">
+                    <button class="card" onclick="sendMessage('placas de drywall')">
+                        <img src="assets/image/chapa-de-gesso-knauf.png" alt="">
+                        <div class="card_content">
+                            <h3>Placas de drywall</h3>
+                            <p>Clique para pedir um orçamento</p>
+                        </div>
+                    </button>
+                    <button class="card" onclick="sendMessage('perfis metálicos')">
+                        <img src="assets/image/perfis-metalicos.png" alt="">
+                        <div class="card_content">
+                            <h3>Perfis metálicos</h3>
+                            <p>Clique para pedir um orçamento</p>
+                        </div>
+                    </button>
+                    <button class="card" onclick="sendMessage('acabamento para drywall')">
+                        <img src="assets/image/massa-drywall.png" alt="">
+                        <div class="card_content">
+                            <h3>Acabamento</h3>
+                            <p>Clique para pedir um orçamento</p>
+                        </div>
+                    </button>
+                    <button class="card" onclick="sendMessage('ferramentas para drywall')">
+                        <img src="assets/image/ferramentas-drywall.png" alt="">
+                        <div class="card_content">
+                            <h3>Ferramentas</h3>
+                            <p>Clique para pedir um orçamento</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
         <footer id="contato">
             <img src="./assets/image/logo/logo-light.svg" alt="">
             <div class="footer_content">
                 <div class="contact_links">
                     <a href="https://wa.me/5519999078738" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                     <a href="https://www.instagram.com/totalgesso_piracicaba/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://web.facebook.com/p/Total-Gesso-Piracicaba-61577327108641/?_rdc=1&_rdr#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 </div>
                 <div class="contact">
                     <h3>Contato</h3>
