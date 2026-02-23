@@ -28,6 +28,7 @@ body{
 section{
     display: flex;
     padding: 80px 60px 0px;
+    margin-bottom: 20px;
     flex-direction: column;
     justify-content: center;
 }
@@ -42,12 +43,61 @@ h3{
     font-weight: 500;
 }
 
+.show{ display: flex; }
+
+aside{
+    background-color: var(--bg-color);
+    z-index: 5000;
+    padding: 20px 60px 20px 20px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    gap: 40px;
+    box-shadow: #3535353b 0px 2px 30px;
+
+    button{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        margin-top: 40%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: fit-content;
+        cursor: pointer;
+        
+        svg{
+            color: var(--secondary-color);
+            font-size: 14pt;
+        }
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        li{
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+}
+
 header{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 10000;
     display: flex;
+    justify-content: space-between;
     padding: 20px;
     background-color: var(--element-bg);
     align-items: center;
@@ -56,6 +106,21 @@ header{
     img{
         width: fit-content;
         height: 35px;
+    }
+
+    button{
+        display: none;
+        height: fit-content;
+        width: fit-content;
+        background-color: transparent;
+        border: none;
+        outline: none;
+
+        svg{
+            font-size: 18pt;
+            font-weight: 300;
+            color: var(--primary-color);
+        }
     }
 
     .header_links{
@@ -90,6 +155,7 @@ header{
 }
 
 .hero{
+    margin-top: -50px;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -112,7 +178,6 @@ header{
         background-color: #0b2a45e7;
         color: #fff;
         padding: 0 60px;
-        flex: 2;
 
         .hero_content_box{
             display: flex;
@@ -150,7 +215,8 @@ header{
                 cursor: pointer;
                 display: flex;
                 align-items: center;
-                gap: 10px;
+                gap: 15px;
+                text-align: left;
 
                 svg{
                     font-size: 18pt;
@@ -166,8 +232,10 @@ header{
 
         img{
             flex: 1;
+            height: 90%;
             filter: drop-shadow(10px 10px 0 var(--highlight-color));
             animation: reveal-opacity 1s both;
+            align-self: self-end;
         }
     }
 }
@@ -299,96 +367,25 @@ header{
 #materiais{
     .materiais_content{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin-top: 20px;
         gap: 20px;
 
-        .hook{
-            display: flex;
-            background-color: var(--highlight-color);
-            width: fit-content;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0 40px;
-            border-radius: 8px;
-            flex: 1;
-            box-shadow: #97979734 0px 0px 50px;
-            position: relative;
-
-            a{
-                margin-top: 20px;
-                width: fit-content;
-                background-color: #25D366;
-                color: #fff;
-                text-decoration: none;
-                padding: 10px 15px;
-                border-radius: 25px;
-                display: flex;
-                align-items: center;
-                gap: 6px;
-                transition: 100ms;
-                
-                svg{
-                    font-size: 14pt
-                }
-            }
-
-            a:hover{
-                transform: scale(1.05);
-                background-color: #fff;
-                color: #000; 
-                box-shadow: #ffffff33 0px 2px 50px;
-            }
-        }
-
-        .cards{
+        .carousel{
             display: flex;
             flex-direction: row;
-            flex: 3;
-            gap: 20px;
+            gap: 10px;
             overflow-x: scroll;
-            overflow-y: hidden;
-            height: fit-content;
-            padding: 5px;
 
             .card{
-                position: relative;
                 display: flex;
-                object-fit: cover;
-                border: none;
-                outline: none;
-                width: fit-content;
-                object-fit: cover;
-                align-items: baseline;
-                transition: 100ms;
-                height: 70vh;
-                min-width: 300px;
-                cursor: pointer;
-                
+                width: 300px;
+                height: 300px;
+
                 img{
-                    object-fit: cover;
                     height: 100%;
                     width: 100%;
-                    border-radius: 8px;
                 }
-                
-                .card_content{
-                    position: absolute;
-                    display: flex;
-                    flex-direction: column;
-                    padding: 15px;
-                    background-color: #0b2a45e7;
-                    color: #fff;
-                    width: 100%;
-                    height: fit-content;
-                    text-align: left;
-                    border-radius: 0 0 8px 8px;
-                    align-self: flex-end;
-                }
-            }
-
-            .card:hover{
-                transform: scale(1.02);
             }
         }
     }
@@ -465,25 +462,22 @@ footer{
     }
 }
 
-@media screen and (max-width: 950px){
-    #sobre .cards{
-        display: grid;
-        grid-template-areas: "atendimento estoque" "garantia parceria";
-        grid-template-columns: 50% 50%;
-    }
-}
+#hook-whatsapp{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    z-index: 20000;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    border-radius: 100%;
+    box-shadow: #97979734 0px 0px 50px;
 
-@media screen and (max-width: 600px){
-    section{
-        padding: 10px
-    }
-
-    header .header_links{
-        display: none;
-    }
-
-    #sobre .cards{
-        display: flex;
-        flex-direction: column;
+    svg{
+        font-size: 22pt;
+        color: #fff;
     }
 }

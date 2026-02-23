@@ -1,0 +1,84 @@
+@media screen and (max-width: 950px){
+    header{
+        .header_links{
+            display: none;
+        }
+        button{
+            display: inline;
+        }
+    }
+
+    .hero{
+        .hero_content .hero_content_box{
+            h1{
+                font-size: 28pt;
+                line-height: 28pt;
+            }
+
+            p{
+                font-size: 16pt;
+            }
+
+            button{
+                font-size: 12pt;
+            }
+        }
+    }
+
+    #sobre .cards{
+        display: grid;
+        grid-template-areas: "atendimento estoque" "garantia parceria";
+        grid-template-columns: 50% 50%;
+    }
+
+    #localizacao{
+        .add{
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 800px;
+            
+            #map{
+                height: 300px;
+                width: 100%;
+            }
+
+            .info{
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:900px){
+    .hero .hero_content{
+        padding: 20px;
+
+        img{ display: none; }
+    }
+}
+
+@media screen and (max-width: 600px){
+    section{
+        padding: 20px
+    }
+
+    .hero .hero_content{
+        .hero_content_box{
+            h1{
+                font-size: 24pt;
+                line-height: 24pt;
+            }
+        }
+        img{
+            display: none;
+        }
+    }
+
+    #sobre {
+        .cards{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
