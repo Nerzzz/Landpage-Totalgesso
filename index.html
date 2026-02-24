@@ -68,7 +68,7 @@
             <div class="header_links">
                 <a href="#sobre">Sobre</a>
                 <a href="#localizacao">Localização</a>
-                <a href="#materiais">Materiais</a>
+                <a href="#produtos">Produtos</a>
                 <a href="#fornecedores">Fornecedores</a>
                 <a href="#contato">Contato</a>
             </div>
@@ -81,7 +81,7 @@
             <ul>
                 <li><a href="#sobre" onclick="asideCtrl()">Sobre</a></li>
                 <li><a href="#localizacao" onclick="asideCtrl()">Localização</a></li>
-                <li><a href="#materiais" onclick="asideCtrl()">Materiais</a></li>
+                <li><a href="#produtos" onclick="asideCtrl()">Produtos</a></li>
                 <li><a href="#fornecedores" onclick="asideCtrl()">Fornecedores</a></li>
                 <li><a href="#contato" onclick="asideCtrl()">Contato</a></li>
             </ul>
@@ -169,15 +169,77 @@
             </div>
         </section>
 
-        <section id="materiais">
-            <h2>Materiais</h2>
-            <div class="materiais_content">
-                <p>A Total Gesso conta com materiais e produtos de qualidade garantida por seus fornecedores em todo o seu estoque</p>
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="produtos_content">
+                <p>A Total Gesso conta com produtos de qualidade garantida por seus fornecedores em todo o seu estoque.</p>
+                <span class="info">*Imagens meramente ilustrativas</span>
 
                 <div class="carousel">
-                    <a class="card">
+                    <button class="card" onclick="sendMessage('placas de drywall')">
+                        <span class="material">Material</span>
                         <img src="./assets/image/chapa-de-gesso.png" alt="">
-                    </a>
+                        <div class="card_content">
+                            <h3>Placas de drywall</h3>
+                            <p>Placas ST, RU e RF</p>
+                        </div>
+                    </button>
+                    <button class="card" onclick="sendMessage('Desempenadeiras')">
+                        <span class="tool">Ferramenta</span>
+                        <img src="./assets/image/chapa-de-gesso.png" alt="">
+                        <div class="card_content">
+                            <h3>Desempenadeiras</h3>
+                            <p>PVC, policarbonato, inox e aço temperado</p>
+                        </div>
+                    </button>
+                    <button class="card" onclick="sendMessage('perfis metálicos')">
+                        <span class="material">Material</span>
+                        <img src="./assets/image/chapa-de-gesso.png" alt="">
+                        <div class="card_content">
+                            <h3>Perfis metálicos</h3>
+                            <p>Para forro ou parede</p>
+                        </div>
+                    </button>
+                    <button class="card" onclick="sendMessage('parafusos')">
+                        <span class="material">Material</span>
+                        <img src="./assets/image/chapa-de-gesso.png" alt="">
+                        <div class="card_content">
+                            <h3>Parafusos</h3>
+                            <p>GN 25, chipboard, buchas</p>
+                        </div>
+                    </button>
+                    <button class="card" onclick="sendMessage('fitas')">
+                        <span class="material">Material</span>
+                        <img src="./assets/image/chapa-de-gesso.png" alt="">
+                        <div class="card_content">
+                            <h3>Fitas</h3>
+                            <p>Teladas, de papel, fibra de vidro</p>
+                        </div>
+                    </button>
+                    <button class="card" onclick="sendMessage('espátulas')">
+                        <span class="tool">Ferramenta</span>
+                        <img src="./assets/image/chapa-de-gesso.png" alt="">
+                        <div class="card_content">
+                            <h3>Espátulas</h3>
+                            <p>15cm, 12cm, 10cm, 7cm, 5cm e 3cm</p>
+                        </div>
+                    </button>
+                    <button class="card" onclick="sendMessage('escarrilhos')">
+                        <span class="tool">Ferramenta</span>
+                        <img src="./assets/image/chapa-de-gesso.png" alt="">
+                        <div class="card_content">
+                            <h3>Escarrilhos</h3>
+                            <p>Redondo, quadrado e baguete</p>
+                        </div>
+                    </button>
+                    <button class="card" onclick="sendMessage('kit porta')">
+                        <span class="material">Material</span>
+                        <img src="./assets/image/chapa-de-gesso.png" alt="">
+                        <div class="card_content">
+                            <h3>Kits Porta</h3>
+                            <p>Para todos os tamanhos de montante</p>
+                        </div>
+                    </button>
                 </div>
             </div>
         </section>
@@ -206,6 +268,6 @@
             <i class="fa-brands fa-whatsapp"></i>
         </a>
 
-        <div id="screen-hider" class="show-screen"></div>
+        <div id="screen-hider" onclick="asideCtrl()" class="show-screen"></div>
     </body>
 </html>
