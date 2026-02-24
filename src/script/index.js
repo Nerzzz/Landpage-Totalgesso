@@ -5,13 +5,13 @@ function sendMessage(context){
 
 let isOpen = false
 function asideCtrl(){
-    const aside = document.getElementsByTagName("aside")[0];
+    const e = document.querySelector("#menu");
     if(!isOpen){
-        aside.classList.add("show");
+        e.classList.add("show");
         isOpen = true;
     }
     else{
-        aside.classList.remove("show");
+        e.classList.remove("show");
         isOpen = false;
     }
 }
