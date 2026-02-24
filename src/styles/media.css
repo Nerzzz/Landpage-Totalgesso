@@ -35,6 +35,13 @@
         grid-template-columns: 50% 50%;
     }
 
+    #produtos .carousel{
+        display: flex;
+        flex-direction: row;
+        scroll-behavior: smooth;
+        overflow-x: auto;
+    }
+
     #localizacao{
         .add{
             gap: 20px;

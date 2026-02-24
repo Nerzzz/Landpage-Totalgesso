@@ -394,7 +394,6 @@ header{
             display: grid;
             grid-template-columns: auto auto auto auto;
             gap: 10px;
-            scroll-behavior: smooth;
             padding: 20px 0;
 
             .card{
