@@ -43,13 +43,29 @@ h3{
     font-weight: 500;
 }
 
-.show{ display: flex; }
+.show{ 
+    animation: forwards showAside ease-out 100ms;
+}
+
+.hide{ 
+    animation: forwards hideAside ease-in 100ms;
+}
+
+@keyframes showAside {
+    0%{ transform: translateX(100%); }
+    100%{ transform: translateX(0px); }
+}
+
+@keyframes hideAside {
+    0%{ transform: translateX(0px); }
+    100%{ transform: translateX(100%); }
+}
 
 aside{
+    display: flex;
     background-color: var(--bg-color);
-    z-index: 10000;
+    z-index: 20000;
     padding: 20px 60px 20px 20px;
-    display: none;
     justify-content: center;
     flex-direction: column;
     position: fixed;
@@ -479,4 +495,17 @@ footer{
         font-size: 22pt;
         color: #fff;
     }
+}
+
+.hide-screen{ display: flex; }
+.show-screen{ display: none; }
+
+#screen-hider{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 15000;
+    top: 0;
+    left: 0;
+    background-color: #1a172b41;
 }

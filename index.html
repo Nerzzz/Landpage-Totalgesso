@@ -75,15 +75,15 @@
             <button onclick="asideCtrl()"><i class="fa fa-bars"></i></button>
         </header>
 
-        <aside id="menu">
+        <aside id="menu" class="hide">
             <button onclick="asideCtrl()"><i class="fa fa-xmark"></i></button>
             <h3>Menu</h3>
             <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#localizacao">Localização</a></li>
-                <li><a href="#materiais">Materiais</a></li>
-                <li><a href="#fornecedores">Fornecedores</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre" onclick="asideCtrl()">Sobre</a></li>
+                <li><a href="#localizacao" onclick="asideCtrl()">Localização</a></li>
+                <li><a href="#materiais" onclick="asideCtrl()">Materiais</a></li>
+                <li><a href="#fornecedores" onclick="asideCtrl()">Fornecedores</a></li>
+                <li><a href="#contato" onclick="asideCtrl()">Contato</a></li>
             </ul>
         </aside>
 
@@ -202,8 +202,10 @@
             <p>Total Gesso Piracicaba 2026</p>
         </footer>
 
-        <a id="hook-whatsapp" href="">
+        <a id="hook-whatsapp" href="https://wa.me/5519999078738" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
+
+        <div id="screen-hider" class="show-screen"></div>
     </body>
 </html>
