@@ -1,50 +1,50 @@
-{
-    "0":{
+[
+    {
         "title":"Placas para drywall",
         "subtitle":"Placas ST, RU e RF",
         "img":"chapa-de-gesso.png",
         "type":"material"
     },
-    "1":{
+    {
         "title":"Desempenadeiras",
         "subtitle":"PVC, policarbonato, inox e aço temperado",
-        "img":"chapa-de-gesso.png",
+        "img":"desempenadeira.png",
         "type":"tool"
     },
-    "2":{
+    {
         "title":"Perfis metálicos",
         "subtitle":"Para forro ou parede",
-        "img":"chapa-de-gesso.png",
+        "img":"perfis-metalicos.png",
         "type":"material"
     },
-    "3":{
+    {
         "title":"Parafusos",
         "subtitle":"GN 25, brocantes, buchas",
-        "img":"chapa-de-gesso.png",
+        "img":"parafusos.png",
         "type":"material"
     },
-    "4":{
+    {
         "title":"Fitas",
         "subtitle":"Teladas, de papel, fibra de vidro",
-        "img":"chapa-de-gesso.png",
+        "img":"fitas.png",
         "type":"material"
     },
-    "5":{
+    {
         "title":"Espátulas",
         "subtitle":"15cm, 12cm, 10cm, 7cm, 5cm e 3cm",
-        "img":"chapa-de-gesso.png",
+        "img":"espatula.png",
         "type":"tool"
     },
-    "6":{
-        "title":"Carrilho",
+    {
+        "title":"Carrilhos",
         "subtitle":"Quadrado, redondo e baguete",
-        "img":"chapa-de-gesso.png",
+        "img":"carrilho.png",
         "type":"tool"
     },
-    "7":{
-        "title":"Kit Porta",
+    {
+        "title":"Kits Porta",
         "subtitle":"Para todos os tamanhos de montante",
-        "img":"chapa-de-gesso.png",
+        "img":"kit-porta.png",
         "type":"material"
     }
-}
+]

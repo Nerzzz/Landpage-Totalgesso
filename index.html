@@ -176,70 +176,16 @@
                 <span class="info">*Imagens meramente ilustrativas</span>
 
                 <div class="carousel">
-                    <button class="card" onclick="sendMessage('placas de drywall')">
-                        <span class="material">Material</span>
-                        <img src="./assets/image/chapa-de-gesso.png" alt="">
-                        <div class="card_content">
-                            <h3>Placas de drywall</h3>
-                            <p>Placas ST, RU e RF</p>
-                        </div>
-                    </button>
-                    <button class="card" onclick="sendMessage('Desempenadeiras')">
-                        <span class="tool">Ferramenta</span>
-                        <img src="./assets/image/chapa-de-gesso.png" alt="">
-                        <div class="card_content">
-                            <h3>Desempenadeiras</h3>
-                            <p>PVC, policarbonato, inox e aço temperado</p>
-                        </div>
-                    </button>
-                    <button class="card" onclick="sendMessage('perfis metálicos')">
-                        <span class="material">Material</span>
-                        <img src="./assets/image/chapa-de-gesso.png" alt="">
-                        <div class="card_content">
-                            <h3>Perfis metálicos</h3>
-                            <p>Para forro ou parede</p>
-                        </div>
-                    </button>
-                    <button class="card" onclick="sendMessage('parafusos')">
-                        <span class="material">Material</span>
-                        <img src="./assets/image/chapa-de-gesso.png" alt="">
-                        <div class="card_content">
-                            <h3>Parafusos</h3>
-                            <p>GN 25, chipboard, buchas</p>
-                        </div>
-                    </button>
-                    <button class="card" onclick="sendMessage('fitas')">
-                        <span class="material">Material</span>
-                        <img src="./assets/image/chapa-de-gesso.png" alt="">
-                        <div class="card_content">
-                            <h3>Fitas</h3>
-                            <p>Teladas, de papel, fibra de vidro</p>
-                        </div>
-                    </button>
-                    <button class="card" onclick="sendMessage('espátulas')">
-                        <span class="tool">Ferramenta</span>
-                        <img src="./assets/image/chapa-de-gesso.png" alt="">
-                        <div class="card_content">
-                            <h3>Espátulas</h3>
-                            <p>15cm, 12cm, 10cm, 7cm, 5cm e 3cm</p>
-                        </div>
-                    </button>
-                    <button class="card" onclick="sendMessage('escarrilhos')">
-                        <span class="tool">Ferramenta</span>
-                        <img src="./assets/image/chapa-de-gesso.png" alt="">
-                        <div class="card_content">
-                            <h3>Escarrilhos</h3>
-                            <p>Redondo, quadrado e baguete</p>
-                        </div>
-                    </button>
-                    <button class="card" onclick="sendMessage('kit porta')">
-                        <span class="material">Material</span>
-                        <img src="./assets/image/chapa-de-gesso.png" alt="">
-                        <div class="card_content">
-                            <h3>Kits Porta</h3>
-                            <p>Para todos os tamanhos de montante</p>
-                        </div>
-                    </button>
+                    <template id="product_card_template">
+                        <button class="card">
+                            <span class="type"></span>
+                            <img class="img" src="" alt="">
+                            <div class="card_content">
+                                <h3 class="title"></h3>
+                                <p class="subtitle"></p>
+                            </div>
+                        </button>
+                    </template>
                 </div>
             </div>
         </section>
